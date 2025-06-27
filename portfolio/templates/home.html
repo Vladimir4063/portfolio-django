@@ -1,0 +1,10 @@
+<h1>Home</h1>
+
+
+{% for project in projects %}
+<pre>{{ project.title }}</pre>
+<pre>{{ project.description }}</pre>
+<img src="{{ project.image.url }}" alt="{{project.title }}" style="width: 300px; height: 200px;">
+
+<a href="{{ project.url}}"> {{project.url}}</a>
+{% endfor %}
